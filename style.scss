@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700;800&display=swap');
+
+// 下面block要不對稱, 做mixin
+
+// *{
+//   border: solid 2px black;
+// }
+
+html, body {
+  width: 1440px;
+  height: 100vh;
+  font-family: 'Spartan', serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:
+    url(../ref/images/bg-pattern-top-desktop.svg),
+    url(../ref/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position:
+    top 0 left 0,
+    bottom 0  right 0;
+}
+
+.cover{
+  width: 1150px;
+}
+
+.top {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 80px;
+}
+
+p {
+  color: hsl(300, 43%, 22%);
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+span {
+  color: hsl(303, 10%, 53%);
+  line-height: 1.5;
+}
+
+.slogan p {
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.rate {
+  color: hsl(300, 43%, 22%);
+}
+.star1, .star2, .star3 {
+    background-color: hsl(300, 24%, 96%);
+    width: 480px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.starblock {
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.star1 {
+  margin-left: -80px;
+  margin-top: 15px;
+}
+
+.star2 {
+  margin-left: -40px;
+  margin-top: 15px;
+}
+
+.star3 {
+  margin-top: 15px;
+}
+
+.rate span{
+  color: hsl(300, 43%, 22%);
+  margin-left: 30px;
+  line-height: 55px;
+  // span line-height設定跟div一樣高就可以垂直置中 https://www.itread01.com/p/687824.html
+}
+
+.rate svg {
+  margin: 0 5px;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile1, .profile2, .profile3 {
+  width: 306px;
+  height: 100%;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  padding: 40px 32px;
+}
+
+.profile2 {
+  margin-top: 15px;
+}
+
+.profile3 {
+  margin-top: 30px;
+}
+
+.name{
+  color: hsl(0, 0%, 100%);
+  margin-left: 20px;
+  font-weight: 700;
+}
+
+.name span {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+}
+
+.upper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.upper img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.review {
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  line-height: 25px;
+}
